@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+:root {
+    --yellow: #F1A600;
+    --veryDarkBlue: #1F1D2C;
+    --darkBlue: #242635;
+    --darkGrey: #c1bcbc;
+    --white: #FFFFFF;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+body {
+    background: var(--veryDarkBlue);
+    color: var(--white);
+}
+
+/*--------------------- REUTILIZABLE */
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.desktop {
+    display: none;
+}
+
+/* .main__container {
+    max-width: 80%;
+    margin: auto;
+} */
+
+
+/*--------------------- HEADER */
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1rem;
+}
+
+header svg {
+    cursor: pointer;
+}
+
+/*--------------------- HERO */
+
+.main__container {
+    display: grid;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.main__text {
+    display: grid;
+    gap: 1rem;
+}
+
+.main__text h1 {
+    font-size: 3rem;
+}
+
+.main__text p {
+    margin: .5rem 0;
+}
+
+.main__text img {
+    width: 190px;
+    margin: auto;
+}
+
+.main__text p span {
+    color: var(--yellow);
+}
+
+/*--------------------- ABOUT ME */
+
+.about_me {
+    background: var(--darkBlue);
+    padding: 2rem 1rem;
+}
+
+.about_me__container {
+    display: grid;
+    gap: 2rem;
+}
+
+.about_me__container h3 {
+    font-size: 2rem;
+}
+
+.about_me__container p {
+    color: var(--darkGrey);
+    margin-bottom: 2rem;
+}
+
+.about_me__icons {
+    display: grid;
+    gap: 4rem;
+}
+
+.about_me__icon {
+    display: grid;
+    gap: .2rem;
+}
+
+.about_me__icon img {
+    width: 90px;
+    margin: auto;
+}
+
+.about_me__icon span {
+    font-weight: 600;
+}
+
+.about_me__icon p {
+    color: var(--darkGrey);
+    font-size: .8rem;
+}
+
+/*--------------------- EXPERIENCE */
+
+.experience {
+    padding: 4rem 2rem;
+}
+
+.experience__container {
+    display: grid;
+    gap: 2rem;
+}
+
+.experience__container h3 {
+    font-size: 2rem;
+}
+
+.experience__contents {
+    display: grid;
+    gap: 4rem;
+}
+
+.experience__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.experience__box svg {
+    width: 56px;
+}
+
+.experience__box span {
+    font-size: 1.12rem;
+    font-weight: 600;
+}
+
+.experience__box__text {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    gap: .3rem;
+}
+
+.experience__box__text h3 {
+    font-size: 1.2rem;
+}
+
+.experience__box__text span {
+    font-size: .8rem;
+    color: var(--darkGrey);
+    font-weight: 400;
+}
+
+.experience__box__text p {
+    font-size: .7rem;
+    color: var(--darkGrey);
+}
+
+/*--------------------- MY SKILLS */
+
+.skills {
+    padding: 3rem 2rem;
+}
+
+.skills__container {
+    display: grid;
+    gap: 1rem;
+}
+
+.skills__container h3 {
+    font-size: 2rem;
+}
+
+.skills__contents {
+    display: grid;
+    gap: 2rem;
+}
+
+.skills__contents__box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+}
+
+.skills__contents__box span {
+    color: var(--yellow);
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.skills__contents__box p {
+    text-align: left;
+}
+
+/*--------------------- PORTAFOLIO */
+
+.portafolio {
+    padding: 3rem 2rem;
+}
+
+.portafolio__container {
+    display: grid;
+    gap: 2rem;
+}
+
+.portafolio__container h3 {
+    font-size: 2rem;
+}
+
+.portafolio__img {
+    display: grid;
+    gap: 5rem;
+}
+
+/*--------------------- CONTACT */
+
+.contact {
+    background: var(--darkBlue);
+    padding: 3rem;
+}
+
+.contact__container {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.contact__container h3 {
+    font-size: 2rem;
+}
+
+.conact__contents {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.contact__contents__box {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    gap: .3rem;
+}
+
+.contact__contents__box svg {
+    margin-bottom: 1.5rem;
+}
+
+.contact__contents__box p {
+    color: var(--darkGrey);
+    font-size: .8rem;
+}
+
+/*--------------------- FOOTER */
+
+
+footer {
+    background: var(--darkBlue);
+    padding: 2rem;
+}
+
+footer p {
+    font-size: .7rem;
+    margin: auto;
+    color: var(--darkGrey)
+}
