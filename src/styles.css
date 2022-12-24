@@ -80,6 +80,13 @@ header .desktop a {
     color: var(--white);
 }
 
+.vector__header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
 /*--------------------- HERO */
 
 .main__container {
@@ -233,7 +240,9 @@ header .desktop a {
 
 .skills {
     padding: 3rem 2rem;
+    background: linear-gradient(90deg, var(--darkBlue) 70%, var(--veryDarkBlue) 30%);
 }
+
 
 .skills__container {
     display: grid;
