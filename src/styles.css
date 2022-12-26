@@ -18,6 +18,10 @@
     text-align: center;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: var(--veryDarkBlue);
     color: var(--white);
@@ -47,6 +51,9 @@ header {
     justify-content: flex-end;
     align-items: center;
     padding: 1rem;
+    width: 100%;
+    max-width: 1300px;
+    margin: auto;
 }
 
 header svg {
@@ -93,10 +100,14 @@ header .desktop a {
     display: grid;
     gap: 2rem;
     padding: 2rem;
+    max-width: 1300px;
+    margin: auto;
 }
 
 .main__text {
-    display: grid;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
     gap: 1rem;
 }
 
@@ -144,6 +155,8 @@ header .desktop a {
 .about_me__container {
     display: grid;
     gap: 2rem;
+    max-width: 1100px;
+    margin: auto;
 }
 
 .about_me__container h3 {
@@ -188,6 +201,8 @@ header .desktop a {
 .experience__container {
     display: grid;
     gap: 2rem;
+    max-width: 600px;
+    margin: auto;
 }
 
 .experience__container h3 {
@@ -247,6 +262,8 @@ header .desktop a {
 .skills__container {
     display: grid;
     gap: 1rem;
+    max-width: 1000px;
+    margin: auto;
 }
 
 .skills__container h3 {
@@ -284,6 +301,8 @@ header .desktop a {
 .portafolio__container {
     display: grid;
     gap: 2rem;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .portafolio__container h3 {
@@ -305,6 +324,8 @@ header .desktop a {
 .contact__container {
     display: grid;
     gap: 1.5rem;
+    max-width: 600px;
+    margin: auto;
 }
 
 .contact__container h3 {
@@ -344,4 +365,204 @@ footer p {
     font-size: .7rem;
     margin: auto;
     color: var(--darkGrey)
+}
+
+/*--------------------- MEDIA QUERIES */
+
+@media (min-width:750px) {
+
+    header .mobile {
+        display: none;
+    }
+
+    header .desktop {
+        width: 100%;
+        position: relative;
+        background: none;
+
+        flex-flow: row wrap;
+        justify-content: flex-end;
+        gap: 2rem;
+    }
+
+    header .desktop a {
+        transition: color .2s;
+    }
+
+    header .desktop a:hover {
+        color: var(--yellow);
+    }
+}
+
+@media (min-width:1024px) {
+
+    * {
+        font-size: 18px;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: block;
+    }
+
+    header .desktop {
+        gap: 4.5rem;
+    }
+
+    header .desktop a {
+        font-size: 16px;
+    }
+
+    .main__container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hero__img {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .hero__img img {
+        width: 500px;
+    }
+
+    .main__container {
+        padding-bottom: 8rem;
+    }
+
+    .main__text {
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 0 3rem;
+    }
+
+    .main__text h1 {
+        font-size: 5rem;
+    }
+
+    .main__text p,
+    .main__text span {
+        font-size: 1.38rem;
+        text-align: left;
+        margin-bottom: 2rem;
+    }
+
+    .main__icons {
+        gap: 4rem;
+    }
+
+    .main__icons svg {
+        transform: scale(1.7);
+    }
+
+    .main__icons svg:hover {
+        transform: scale(2);
+    }
+
+    .about_me__icons {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 500px;
+        margin: auto;
+    }
+
+    .about_me__icons img {
+        width: 120px;
+    }
+
+    .about_me__icon {
+        gap: .8rem;
+    }
+
+    .experience__box__text {
+        margin-right: 5rem;
+        gap: .5rem;
+    }
+
+    .experience__box svg {
+        width: 122px;
+    }
+
+    .experience__box>span,
+    .experience__box__text h3 {
+        font-size: 1.5rem;
+    }
+
+    .skills {
+        background: linear-gradient(90deg, var(--darkBlue) 50%, var(--veryDarkBlue) 50%);
+    }
+
+    .skills__container {
+        gap: 2rem;
+    }
+
+    .skills__contents {
+        justify-content: center;
+    }
+
+    .experience__box__text span {
+        font-size: 1.2rem;
+    }
+
+    .experience__box__text p {
+        font-size: .9rem;
+    }
+
+    .skills__contents__box {
+        gap: 5rem;
+    }
+
+    .skills__contents__box span {
+        font-size: 4rem;
+    }
+
+    .skills__contents__box p {
+        font-size: 1.5rem;
+    }
+
+    .portafolio__img {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contact__container {
+        gap: 5rem;
+    }
+
+    .conact__contents {
+        grid-template-columns: 1fr 1fr;
+        padding: 1rem;
+        gap: 15rem;
+        height: auto;
+    }
+
+    .contact__contents__box {
+        height: auto;
+        width: 200px;
+        gap: 1rem;
+    }
+
+    .contact__contents__box svg {
+        transform: scale(2.5);
+    }
+
+    .contact__contents__box span {
+        font-size: 1.5rem;
+    }
+
+    .contact__contents__box p {
+        font-size: 1rem;
+    }
+
+    footer {
+        background: var(--veryDarkBlue);
+        padding: 4rem;
+    }
+
+    footer p {
+        font-size: 1rem;
+    }
 }
