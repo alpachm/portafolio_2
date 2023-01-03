@@ -43,6 +43,9 @@ img {
     margin: auto;
 } */
 
+.top_icon {
+    position: fixed;
+}
 
 /*--------------------- HEADER */
 

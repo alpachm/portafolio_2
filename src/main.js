@@ -1,8 +1,15 @@
 const iconMenu = document.querySelector('.icon_menu');
 const menu = document.querySelector('.header__menu')
 
-iconMenu.addEventListener('click', function(){
+function clickear(){
     menu.classList.toggle('show__menu')
-})
+}
 
-console.log(iconMenu);
+iconMenu.addEventListener('click', clickear)
+
+const menuList = document.querySelectorAll('.header__menu a')
+
+for(i of menuList){
+    i.addEventListener('click', clickear)
+}
+
